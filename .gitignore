@@ -11,6 +11,8 @@
 #   Tobias Leibner  (2018)
 # ~~~
 
+.vscode
+tags
 CMakeCache.txt
 CMakeFiles
 cmake_config.h

@@ -17,6 +17,7 @@
 #include <initializer_list>
 #include <memory>
 #include <mutex>
+#include <numeric>
 #include <type_traits>
 #include <vector>
 
@@ -295,6 +296,8 @@ public:
     : backend_(backend_ptr)
     , mutexes_(std::make_unique<MutexesType>(num_mutexes))
   {}
+
+  using InterfaceType::operator=;
 
   ThisType& operator=(const ThisType& other)
   {
